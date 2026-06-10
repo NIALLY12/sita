@@ -1,0 +1,122 @@
+/* Paleta de Cores do Projeto */
+:root {
+    --primary-color: #2E7D32; /* Verde Agricultura */
+    --secondary-color: #1565C0; /* Azul Água */
+    --bg-color: #F4F6F4;
+    --text-color: #2C3E50;
+    --card-bg: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #1B5E20);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.badge {
+    background-color: var(--secondary-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 12px 0 6px 0;
+}
+
+/* Área de Conteúdo */
+main {
+    padding: 30px 0;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Formulário de Input */
+.form-group {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    max-width: 220px;
+    padding: 12px;
+    border: 2px solid #CBD5E1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+/* Conteinerizador do Canvas p5.js */
+#canvas-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #F8F9FA;
+    border: 2px solid #E2E8F0;
+    border-radius: 10px;
+    overflow-x: auto; /* Permite rolar de lado em telas muito pequenas */
+}
+
+/* Rodapé */
+footer {
+    background-color: #1E293B;
+    color: #94A3B8;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+}
